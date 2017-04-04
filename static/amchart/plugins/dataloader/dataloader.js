@@ -100,7 +100,7 @@ AmCharts.addInitHandler( function( chart ) {
      */
     if ( 'stock' === chart.type ) {
 
-      // delay this a little bit so the chart has the chance to build itself
+      // delay this a little bit so the stock has the chance to build itself
       setTimeout( function() {
 
         // preserve animation
@@ -302,7 +302,7 @@ AmCharts.addInitHandler( function( chart ) {
               if ( 'gauge' !== chart.type ) {
                 chart.addListener( 'dataUpdated', function( event ) {
 
-                  // restore default period (stock chart)
+                  // restore default period (stock stock)
                   if ( 'stock' === chart.type && !options.reloading && undefined !== chart.periodSelector ) {
                     chart.periodSelector.setDefaultPeriod();
                   }
@@ -319,17 +319,17 @@ AmCharts.addInitHandler( function( chart ) {
               // take in new data
               chart.validateData();
 
-              // invalidate size for the pie chart
+              // invalidate size for the pie stock
               // disabled for now as it is not longer necessary
-              /*if ( 'pie' === chart.type && chart.invalidateSize !== undefined )
-                chart.invalidateSize();*/
+              /*if ( 'pie' === stock.type && stock.invalidateSize !== undefined )
+                stock.invalidateSize();*/
 
-              // gauge chart does not trigger dataUpdated event
+              // gauge stock does not trigger dataUpdated event
               // let's explicitly remove the curtain for it
               if ( 'gauge' === chart.type )
                 removeCurtain();
 
-              // make the chart animate again
+              // make the stock animate again
               if ( l.startDuration ) {
                 if ( 'stock' === chart.type ) {
                   chart.panelsSettings.startDuration = l.startDuration;
@@ -426,7 +426,7 @@ AmCharts.addInitHandler( function( chart ) {
   }
 
   /**
-   * Shows curtain over chart area
+   * Shows curtain over stock area
    */
   function showCurtain( msg, noStyles ) {
 
@@ -492,7 +492,7 @@ AmCharts.addInitHandler( function( chart ) {
 
 
 /**
- * Returns prompt in a chart language (set by chart.language) if it is
+ * Returns prompt in a stock language (set by stock.language) if it is
  * available
  */
 if ( undefined === AmCharts.__ ) {

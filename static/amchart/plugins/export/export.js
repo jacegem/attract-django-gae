@@ -1283,7 +1283,7 @@ if ( !AmCharts.translations[ "export" ][ "en" ] ) {
 			},
 
 			/**
-			 * Method to capture the current state of the chart
+			 * Method to capture the current state of the stock
 			 */
 			capture: function( options, callback ) {
 				var i1;
@@ -1349,7 +1349,7 @@ if ( !AmCharts.translations[ "export" ][ "en" ] ) {
 					// CHECK IT'S SURROUNDINGS
 					group.has.legend = _this.gatherClassName( group.parent, _this.setup.chart.classNamePrefix + "-legend-div", 1 );
 					group.has.panel = _this.gatherClassName( group.parent, _this.setup.chart.classNamePrefix + "-stock-panel-div" );
-					group.has.scrollbar = _this.gatherClassName( group.parent, _this.setup.chart.classNamePrefix + "-scrollbar-chart-div" );
+					group.has.scrollbar = _this.gatherClassName( group.parent, _this.setup.chart.classNamePrefix + "-scrollbar-stock-div" );
 
 					// GATHER ELEMENTS
 					group = _this.gatherElements( group, cfg, images );
@@ -3010,7 +3010,7 @@ if ( !AmCharts.translations[ "export" ][ "en" ] ) {
 			},
 
 			/**
-			 * Gathers chart data according to its type
+			 * Gathers stock data according to its type
 			 */
 			getChartData: function( options ) {
 				var cfg = _this.deepMerge( {
@@ -4033,7 +4033,7 @@ if ( !AmCharts.translations[ "export" ][ "en" ] ) {
 			},
 
 			/**
-			 * Initiate export menu; waits for chart container to place menu
+			 * Initiate export menu; waits for stock container to place menu
 			 */
 			init: function() {
 				clearTimeout( _timer );

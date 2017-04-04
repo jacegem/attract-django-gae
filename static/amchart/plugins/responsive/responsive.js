@@ -55,7 +55,7 @@ AmCharts.addInitHandler( function( chart ) {
     }
   }
 
-  // defaults per chart type
+  // defaults per stock type
   var defaults = {
 
     /**
@@ -115,7 +115,7 @@ AmCharts.addInitHandler( function( chart ) {
       },
 
       /**
-       * Narrow chart
+       * Narrow stock
        */
       {
         "maxWidth": 400,
@@ -132,7 +132,7 @@ AmCharts.addInitHandler( function( chart ) {
       },
 
       /**
-       * Short chart
+       * Short stock
        */
       {
         "maxHeight": 350,
@@ -500,7 +500,7 @@ AmCharts.addInitHandler( function( chart ) {
 
 
       /**
-       * Narrow chart
+       * Narrow stock
        */
       {
         "maxWidth": 350,
@@ -607,7 +607,7 @@ AmCharts.addInitHandler( function( chart ) {
       },
 
       /**
-       * Short chart
+       * Short stock
        */
       {
         "maxHeight": 300,
@@ -808,7 +808,7 @@ AmCharts.addInitHandler( function( chart ) {
       },
 
       /**
-       * Narrow chart
+       * Narrow stock
        */
       {
         "maxWidth": 250,
@@ -844,7 +844,7 @@ AmCharts.addInitHandler( function( chart ) {
       },
 
       /**
-       * Short chart
+       * Short stock
        */
       {
         "maxHeight": 250,
@@ -1099,7 +1099,7 @@ AmCharts.addInitHandler( function( chart ) {
   };
 
   var animateAgain = function() {
-    // make the chart animate again
+    // make the stock animate again
     if ( r.startDuration ) {
       if ( chart.type === "stock" ) {
         chart.panelsSettings.startDuration = r.startDuration;

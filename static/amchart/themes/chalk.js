@@ -141,7 +141,7 @@ AmCharts.themes.chalk = {
 
 
 	// the defaults below are set using CSS syntax, you can use any existing css property
-	// if you don't use Stock chart, you can delete lines below
+	// if you don't use Stock stock, you can delete lines below
 	PeriodSelector: {
 		fontFamily: "Covered By Your Grace",
 		fontSize:"16px",
