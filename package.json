@@ -1,0 +1,22 @@
+{
+  "name": "attract-django-gae",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacegem/attract-django-gae.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacegem/attract-django-gae/issues"
+  },
+  "homepage": "https://github.com/jacegem/attract-django-gae#readme",
+  "devDependencies": {
+    "amstock3": "github:amcharts/amstock3"
+  }
+}

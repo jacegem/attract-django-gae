@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>Title</title>
+
+    <!-- Styles -->
+    <style>
+        #chartdiv {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+
+    <script src="/static/chart/test.js"></script>
+
+    <!-- Resources -->
+    <script src="/static/amchart/amcharts.js"></script>
+    <script src="/static/amchart/serial.js"></script>
+    <script src="/static/amchart/amstock.js"></script>
+    <script src="/static/amchart/plugins/export/export.min.js"></script>
+    <script src="/static/amchart/themes/light.js"></script>
+    <script src="/static/chart/chart.js"></script>
+
+    <link rel="stylesheet" href="/static/amchart/plugins/export/export.css" type="text/css" media="all"/>
+
 </head>
 <body>
-    <h1>{{message}}</h1>
+<h1>{{ message }}</h1> inside head tag
+
+<!-- HTML -->
+<div id="chartdiv"></div>
+
 </body>
 </html>
