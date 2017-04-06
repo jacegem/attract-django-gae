@@ -53,3 +53,7 @@ docs/_build/
 
 # npm
 node_modules/
+
+# private
+settings.py
+python2.bat

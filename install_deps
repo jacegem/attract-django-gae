@@ -10,6 +10,7 @@ from StringIO import StringIO
 from zipfile import ZipFile
 from urllib import urlopen
 
+
 REQUIREMENTS = ["pip", "git"]
 
 FILES_IGNORED_FOR_DELETION = ["google_appengine"]

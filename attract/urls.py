@@ -26,9 +26,8 @@ urlpatterns = (
 
     url(r'^auth/', include('djangae.contrib.gauth.urls')),
 
-
-    url(r'^stock/$', stock.chart),
-    url(r'^stock/highchart/', stock.highchart),
+    url(r'^polls/', include('polls.urls')),
+    url(r'^stock/', include('stock.urls')),
     url(r'^$', lambda r: HttpResponseRedirect('stock/highchart/')),
 )
 
